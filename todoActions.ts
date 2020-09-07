@@ -8,10 +8,10 @@ export interface ITodo {
 
 export const deleteTodo = (id: number, todos: ITodo[], html: Element):void => {
     const filteredTodos = todos.filter(item => item.id !== id)
-    todoActions(filteredTodos, html)
+    addTodo(filteredTodos, html)
 }
 
-export const todoActions = (todos: ITodo[], html: Element, title?: string): void => {
+export const addTodo = (todos: ITodo[], html: Element, title?: string): void => {
 
     if (title){
         const newTodo: ITodo = {

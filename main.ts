@@ -1,4 +1,4 @@
-import {todoActions, ITodo} from "./todoActions";
+import {addTodo, ITodo} from "./todoActions";
 import {deleteTodo} from "./todoActions";
 
 const todoAddForm: HTMLElement = document.getElementById('todoAddForm')!
@@ -77,7 +77,7 @@ todoAddForm.addEventListener('submit', (e: Event): void => {
     e.preventDefault()
     const formData = new FormData(e.target as HTMLFormElement)
     const title: string = formData.get('todo')!.toString()
-    todoActions(JSON.parse(localStorage.getItem('todos') as string) || todos, todoContent, title)
+    addTodo(JSON.parse(localStorage.getItem('todos') as string) || todos, todoContent, title)
 
 })
 
