@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container todos-app">
+    <header>
+        <h1>My Typescript Todo app</h1>
+    </header>
+    <main>
+        <div class="todos">
+            <div class="todos__form">
+                <form action="" id="todoAddForm">
+                    <input id="formTodo" type="text" name="todo" placeholder="Type your todo..." autocomplete=true>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="todos__title">
+                Todos List
+            </div>
+            <input id="search-todos" type="search" placeholder="Type to search todo...">
+            <select name="filterSelect" id="filterSelect">
+                <option value="all">all</option>
+                <option value="completed">completed</option>
+                <option value="active">active</option>
+            </select>
+            <div class="todos__content"></div>
+        </div>
+    </main>
+    <footer>
+        Copyright © 2020 by <a href="https://github.com/EGYY" target="_blank">EGYY</a>
+    </footer>
+</div>
+
+<script src="./dist/bundle.js"></script>
+</body>
+</html>

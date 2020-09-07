@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.todos-app {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.todos-app main {
+    flex: 1;
+}
+
+.todos__title {
+    margin: 15px 0;
+}
+
+.todos__content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.done {
+    text-decoration: line-through;
+}
